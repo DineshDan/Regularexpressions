@@ -1,9 +1,9 @@
 echo "Welcome to the user regitrstion program being solved in the master branch"
-read -p "enter a valid mobilenumber:" mobilenumber
-mobilenumberRegex="[0-9]{2}[ ]?[0-9]{10}$"
-if(($mobilenumber =~ $mobilenumberRegex))
+read -p "enter atleat 8 characters password:" password
+passwordRegex="^[0-9a-zA-Z]{8,}$"
+if(($characters =~ $PasswordRegex))
 then
-      echo "$mobilenumber is a valid number"
+      echo "$Password have atleast 8 characters"
 else
-     echo "invalid mobilenumber"
+     echo "invalid password"
 fi
