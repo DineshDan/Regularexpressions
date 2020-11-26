@@ -1,9 +1,9 @@
 echo "Welcome to the user regitrstion program being solved in the master branch"
-read -p "enter your first name: " firstname
-firstnameRegex="^[A-Z]{1}[a-z]{2,}"
-if(($firstname =~ $firstnameRegex))
+read -p "enter your last name: " lastname
+lastnameRegex="[A-Z]{1}[a-z]{2,}$"
+if(($lastname =~ $lastnameRegex))
 then
-      echo "$firstname is a valid name"
+      echo "$lastname is a valid name"
 else
      echo "invalid name"
 fi
