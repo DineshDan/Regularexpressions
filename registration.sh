@@ -1,9 +1,9 @@
 echo "Welcome to the user regitrstion program being solved in the master branch"
-read -p "enter a valid emailid:" emailId
-emailIdRegex="^[a-zA-Z0-9\-\+\.]*.([a-zA-Z0-9])?@([a-z0-9]*.[a-z]{2,4}.([a-z]{2,})?)$"
-if(($emailId =~ $emailIdRegex))
+read -p "enter a valid mobilenumber:" mobilenumber
+mobilenumberRegex="[0-9]{2}[ ]?[0-9]{10}$"
+if(($mobilenumber =~ $mobilenumberRegex))
 then
-      echo "$emailId is a valid name"
+      echo "$mobilenumber is a valid number"
 else
-     echo "invalid emailId"
+     echo "invalid mobilenumber"
 fi
